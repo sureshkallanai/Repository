@@ -20,7 +20,17 @@ namespace WebApp
         {            
             try
             {
-                Customer entity = new Customer();
+                //SQL Create Table
+                //create table customer(id int identity(1, 1) primary key, Cname varchar(max), Caddress varchar(max))
+                //SQL Create Store procedure
+                //create proc[dbo].[sp_insertcustomer]
+                //@Cname varchar(max), @Caddress varchar(max)
+                //as
+                //begin
+                //insert into customer values(@Cname, @Caddress)
+                //end
+                
+                                Customer entity = new Customer();
                 entity.Cname = "testname";
                 entity.Caddress = "testaddress";
                 using (DbCon dbcon = new DbCon())
